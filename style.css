@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*https://wallpapercave.com/uwp/uwp448975.jpeg*/
+/*https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=800x600*/
+body{
+    background: url('https://img.wallpapersafari.com/desktop/1920/1080/15/26/byjPFd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Poppins',sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .center .button{
+    background-color:rgba(219, 50, 50,0.6);
+    border: none;
+    color: white;
+    border-radius: 17px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+  } 
+  .container{
+    padding: 20px 70px;
+    color:#fff;
+}
+.current_info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.date_container{
+    font-weight: 300;
+}
+.date_container .time{
+    font-size: 70px;
+    font-weight: 700;
+}
+.date_container #am-pm{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 400;
+}
+.date_container .date{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.place_container{
+    text-align: end;
+}
+
+.place_container .time_zone{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.place_container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.current_info .others{
+    display: flex;
+    flex-direction: column;
+    background: rgba(24,24,27,0.6);
+    padding:20px 40px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current_info .others .weather_items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.future_forecast{
+    background: rgba(24,24,27,0.8);
+    padding: 25px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather_forecast_item .weather_forecast{
+    display: flex;
+}
+.future_forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+.future_forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future_forecast .today .temp{
+    font-size: 20px;
+    padding: 10px;
+}
+.future_forecast .weather_forecast{
+    display: flex;
+}
+
+.weather_forecast .weather_forecast_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+    padding: 15px;
+}
+
+.weather_forecast .weather_forecast_item .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.weather_forecast .weather_forecast_item .temp{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+@media only screen and (max-width:730px){
+    .body{
+        background: url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=800x600');
+    }
+
+    .container{
+        padding: 20px;
+        font-weight: 300;
+    }
+    .future_forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+        font-weight: 300;
+    }
+    
+    .future_forecast .today .temp{
+        font-size: 23px;
+        font-weight:300;
+    }
+
+    .date_container .time{
+        font-size: 20px;
+    }
+
+    .date_container #am-pm{
+        font-size: 20px;
+    }    
+
+    .date_container .date{
+        font-size: 20px;
+    }
+
+    .place_container{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .place_container .time_zone{
+        font-size: 12px;
+    }
+
+    .current_info .others{
+        padding: 12px;
+
+    }
+    .current_info .others .weather_items{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .body{
+        background: url('https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png?compress=1&resize=800x600');
+    }
+ 
+    .future_forecast{
+        justify-content: start;
+        align-items: center;
+        overflow-y: scroll;
+        font-weight: 300;
+    }
+}
